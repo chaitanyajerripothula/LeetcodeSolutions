@@ -36,11 +36,7 @@ function mergeObjects(obj1, obj2) {
   const mergedObj = { ...obj1 };
 
   for (const key in obj2) {
-    if (!mergedObj.hasOwnProperty(key)) {
-      mergedObj[key] = obj2[key];
-    } else {
-      mergedObj[key] = obj2[key];
-    }
+    mergedObj[key] = obj2[key];
   }
 
   return mergedObj;
