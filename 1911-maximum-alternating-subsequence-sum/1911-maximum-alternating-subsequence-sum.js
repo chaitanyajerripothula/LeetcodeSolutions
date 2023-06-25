@@ -3,7 +3,7 @@
  * @return {number}
  */
 var maxAlternatingSum = function(nums) {
-     let evenSum = nums[0];
+  let evenSum = nums[0];
   let oddSum = 0;
 
   for (let i = 1; i < nums.length; i++) {
