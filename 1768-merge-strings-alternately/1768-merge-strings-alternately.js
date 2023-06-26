@@ -5,15 +5,13 @@
  */
 var mergeAlternately = function(word1, word2) {
    let merged = '';
-  const n1 = word1.length;
-  const n2 = word2.length;
-  const maxLength = Math.max(n1, n2);
+  const maxLength = Math.max(word1.length, word2.length);
   
   for (let i = 0; i < maxLength; i++) {
-    if (i < n1) {
+    if (word1[i]) {
       merged += word1[i];
     }
-    if (i < n2) {
+    if (word2[i]) {
       merged += word2[i];
     }
   }
